@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You still Be My Valentine?</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div id="container">
+        <div id="image-container"></div> <!-- Container for displaying images -->
+        <div id="text-container">
+            <h1>💖 The Valentine's Day Proposal! 💖</h1>
+            <p>Would you like to accept this amazing opportunity to share love and joy?</p>
+            <button class="yes-button" id="yesButton">YES, I LOVE IT! 💕</button>
+            <button class="no-button" id="noButton">NO, THANK YOU! 💔</button>
+            <p class="additional-text" id="additionalText"></p>
+        </div>        
+        </div>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        window.addEventListener('load', function() {
+            const yesButton = document.getElementById('yesButton');
+            const noButton = document.getElementById('noButton');
+            const container = document.querySelector('.container');
+            const additionalText = document.getElementById('additionalText');
+       
+             yesButton.addEventListener('click', () => {
+                alert('Thank you so muchhh! ');
+                window.location.href = "index0.html";
+            });
+
+        
+            noButton.addEventListener('click', () => {
+                alert('Are you sure? ');
+                const randomX = Math.random() * (window.innerWidth - 100); 
+                const randomY = Math.random() * (window.innerHeight - 50); 
+                noButton.style.position = 'absolute';
+                noButton.style.left = `${randomX}px`;
+                noButton.style.top = `${randomY}px`;
+                
+        
+                container.querySelector('p').innerText = "Are you sure? Think of all the love and happiness we could share by saying YES! 💞";
+            });
+            additionalText.innerText = "Please say yes .Saying YES could lead to wonderful experiences and cherished memories. 💘";  additionalText.style.display = 'block';
+        });
+        </script>
+</body>
+</html>
