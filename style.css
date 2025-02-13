@@ -20,7 +20,7 @@ body {
 }
 
 #question {
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
+    font-family: 'Arial', cursive; /* Apply Sacramento font to the question */
     font-size: 52px; /* Set font size for the question */
 }
 
@@ -32,7 +32,7 @@ button {
     padding: 10px 20px; /* Set padding for buttons */
     margin: 0 10px; /* Set margin around buttons */
     font-size: 26px; /* Set font size for buttons */
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    font-family: 'Arial', cursive; /* Apply Sacramento font to the options */
     background-color: #FB607F; /* Set button background color */
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
