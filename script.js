@@ -1,4 +1,4 @@
-// script.js
+// Made by Merlin :D
 
 // Function to handle button click events
 function selectOption(option) {
@@ -52,3 +52,4 @@ function displayCatHeart() {
 
 // Display the cat.gif initially
 displayCat();
+// Made by Merlin :D
